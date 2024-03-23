@@ -23,6 +23,8 @@ body {
    
 }
 
+/* Balance */
+
 .balance-summary {
     background-color: var(--soft-red);
     display: flex;
@@ -45,6 +47,8 @@ body {
     font-weight: 700;;
 }
 
+
+/* Spending */
 
 .spending-summary {
     background-color: var(--very-pale-orange);
@@ -74,6 +78,8 @@ body {
 }
 
 
+/* Total Spending */
+
 .total-spending-summary {
     display: flex;
     flex-direction: column;
@@ -90,6 +96,8 @@ body {
     font-size: 1.5em;
     font-weight: 700; 
 }
+
+/* Percentage */
 
 .percent-summary {
     display: flex;
@@ -108,3 +116,41 @@ body {
     color: var(--medium-brown);
     font-size: .75em;
 }
+
+.chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 200px;
+  }
+  
+  .bar {
+    width: 30px;
+    background-color: var(--soft-red);
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.3s;
+  }
+  
+  .bar:hover {
+    background-color: var(--cyan);
+    cursor: pointer;
+  }
+  
+  .bar:hover::after {
+    content: attr(data-amount);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--dark-brown);
+    color: var(--very-pale-orange);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.8em;
+  }
+  
+  .bar.current {
+    background-color: var(--cyan);
+  }
+  
