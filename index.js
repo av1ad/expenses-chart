@@ -1,4 +1,3 @@
-// Fetch data from local JSON file and dynamically generate bars
 fetch('data.json')
   .then(response => response.json())
   .then(data => {
