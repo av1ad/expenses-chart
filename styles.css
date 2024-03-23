@@ -30,6 +30,7 @@ body {
     padding: .25em 1em;
     border-radius: 10px;
     color: var(--cream);
+    margin-bottom: .75em;
 }
 
 .balance-header {
@@ -42,4 +43,68 @@ body {
     margin-top: .25em;
     margin-bottom: .75em;
     font-weight: 700;;
+}
+
+
+.spending-summary {
+    background-color: var(--very-pale-orange);
+    padding: 1em;
+    border-radius: 10px;
+    color: var(--dark-brown);
+}
+
+.spending-header {
+    margin-top: .25em;
+    font-size: 1.25em;
+    text-align: left;
+}
+
+.dates {
+    display: flex;
+    justify-content: space-between;
+    color: var(--medium-brown);
+    font-size: .75em;
+    border-bottom: 2px solid var(--cream);
+    margin-bottom: 1em;
+}
+
+.spending-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.total-spending-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.total-header {
+    color:hsl(28, 10%, 53%);
+    font-size: .75em;
+    margin: .25em;
+}
+
+.total {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 700; 
+}
+
+.percent-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.percent {
+    margin: 0;
+    font-weight: 700;
+}
+
+.percent-description {
+    margin: 0;
+    color: var(--medium-brown);
+    font-size: .75em;
 }
