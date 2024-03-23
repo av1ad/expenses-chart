@@ -61,6 +61,7 @@ body {
     margin-top: .25em;
     font-size: 1.25em;
     text-align: left;
+    margin-bottom: 0;
 }
 
 .dates {
@@ -125,9 +126,9 @@ body {
   }
   
   .bar {
-    width: 30px;
+    width: 28px;
     background-color: var(--soft-red);
-    border-radius: 5px;
+    border-radius: 3px;
     position: relative;
     transition: background-color 0.3s;
   }
